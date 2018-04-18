@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SK2 Architects Projects</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/projects-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+<div class="grid-container">
+<!-- Main Navigation -->
+  <nav>
+  <ul class="main-nav">
+    <li><a href="./index.html" class="logo"><img src="images/sk2-logo.png" alt=""/></a></li>
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="./projects.html">PROJECTS</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+<main>
+<!-- Projects Filter Buttons -->
+  <div id="filters">
+    <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+    <button class="btn" onclick="filterSelection('commercial')">COMMERCIAL</button>
+    <button class="btn" onclick="filterSelection('residential')">RESIDENTIAL</button>
+  </div>
+
+<!-- Projects Gallery -->
+ <section class="gallery">
+
+  <div class="item">
+    <div class="column commercial">
+      <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+      <div class="caption">JEFFERSON’S COFFEE SHOP HOBOKEN, NJ</div>
+    </div>
+   </div>
+
+
+  <div class="item">
+    <div class="column residential">
+      <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+      <div class="caption">VIBRANT TOWNHOMES DALLAS, TX</div>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="column commercial">
+     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+     <div class="caption">NU HEIGHT PEDIATRICS CLIFTON, NJ</div>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="column commercial">
+     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+     <div class="caption">BOD BOARD OF DIRECTORS SOHO, NYC</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="column residential">
+     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+     <div class="caption">SINGLE FAMILY HOME WAYNE, NJ</div>
+    </div>
+   </div>
+
+  <div class="item">
+    <div class="column residential">
+     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+     <div class="caption">STUDENT HOUSING BETHLEHEM, PA</div>
+    </div>
+  </div>
+
+  <div class="item">
+   <div class="column residential">
+     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+     <div class="caption">CONDO INTERIOR DESIGN BROOKLYN, NY</div>
+    </div>
+  </div>
+
+  <div class="item">
+   <div class="column commercial">
+     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
+     <div class="caption">CONDO INTERIOR DESIGN BROOKLYN, NY</div>
+   </div>
+  </div>
+ </section>
+
+ <!-- Let's Talk -->
+ <section class="lets-talk">
+    <div class="contact-question">What is your project?</div>
+    <div class="lets-talk-button">LET'S TALK</div>
+ </section>
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("filters");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</main>
+</body>
+
+<footer>
+  <div class="address">©2018 SK2 ARCHITECTS LLC | 38 Jackson St. Suite A201 Hoboken, NJ 07030</div>
+  <div class="connect">info@sk2architects.com | 917-690-0273 | <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-instagram"></i></div>
+</footer>

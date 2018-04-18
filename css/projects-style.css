@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.logo{
+  margin-left: 6rem;
+}
+
+/* Projects Gallery*/
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.item {
+  width: 50%;
+  height: 50%;
+  padding: 2rem;
+}
+
+
+/* Grid Areas*/
+.header { grid-area: header; }
+.filters { grid-area: filters; }
+.gallery { grid-area: gallery; }
+.lets-talk { grid-area: lets-talk; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'filters'
+    'gallery'
+    'lets-talk'
+    'footer';
+}
+
+/* Main Navigation */
+.main-nav {
+  display: -webkit-flex;
+  display: flex;
+  background-color: #202020;
+  align-items: center;
+}
+.main-nav li:first-child {
+  margin-right: auto;
+}
+.main-nav a {
+  font-family: 'Yantramanav', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 16px;
+  letter-spacing: 0.20em;
+  color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+  margin-right: 4rem;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+a:hover {
+  color: #D6A67F;
+}
+
+#filters {
+  display: flex;
+  background-color: #FAFAFA;
+  justify-content: center;
+}
+.main-nav .logo {
+  margin-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Style projects filter buttons */
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Yantramanav', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 14px;
+  letter-spacing: 0.20em;
+  color: #FFFFFF;
+  width: 16rem;
+  padding: 0.5rem 2rem;
+  margin: 4rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+/* Add a background color on mouse-over */
+.btn:hover {
+  background-color: #565656;
+}
+
+/* Add a background color to the active button */
+.btn.active {
+  background-color: #E8A569;
+  color: white;
+}
+
+.lets-talk {
+  background-color: #98AAB1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-question {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.lets-talk-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Yantramanav', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 14px;
+  letter-spacing: 0.20em;
+  color: #FFFFFF;
+  width: 16rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.lets-talk-button:hover {
+  background-color: #565656;
+}
