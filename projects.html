@@ -36,123 +36,133 @@
 <!-- Projects Gallery -->
  <section class="gallery">
 
-  <div class="item">
-    <div class="column commercial">
-      <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-      <div class="caption">JEFFERSON’S COFFEE SHOP HOBOKEN, NJ</div>
+  <div class="item commercial">
+    <div class="column commercial all">
+      <a href="./jeffersons-coffee-shop.html"><img src="images/jefferson-coffee.png"></a>
+      <div class="overlay">JEFFERSON’S COFFEE SHOP</div>
+      <div class="overlay">HOBOKEN, NJ</div>
     </div>
    </div>
 
 
-  <div class="item">
-    <div class="column residential">
-      <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-      <div class="caption">VIBRANT TOWNHOMES DALLAS, TX</div>
+  <div class="item residential">
+    <div class="column residential all">
+      <a href="./vibrant-townhomes.html"><img src="images/vibrant-townhomes.png"></a>
+      <div class="overlay">VIBRANT TOWNHOMES</div>
+      <div class="overlay">DALLAS, TX</div>
     </div>
   </div>
 
 
-  <div class="item">
-    <div class="column commercial">
-     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-     <div class="caption">NU HEIGHT PEDIATRICS CLIFTON, NJ</div>
+  <div class="item commercial">
+    <div class="column commercial all">
+     <a href="./nu-height-pediatrics.html"><img src="images/nuheight-pediatrics.png"></a>
+     <div class="overlay">NU HEIGHT PEDIATRICS</div>
+     <div class="overlay">CLIFTON, NJ</div>
     </div>
   </div>
 
 
-  <div class="item">
-    <div class="column commercial">
-     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-     <div class="caption">BOD BOARD OF DIRECTORS SOHO, NYC</div>
+  <div class="item commercial">
+    <div class="column commercial all">
+     <a href="./bod-board-of-directors.html"><img src="images/bod-directors.png"></a>
+     <div class="overlay">BOD BOARD OF DIRECTORS</div>
+     <div class="overlay">SOHO, NYC</div>
     </div>
   </div>
 
-  <div class="item">
-    <div class="column residential">
-     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-     <div class="caption">SINGLE FAMILY HOME WAYNE, NJ</div>
+  <div class="item residential">
+    <div class="column residential all">
+     <a href="./single-family-home.html"><img src="images/single-family.png"></a>
+     <div class="overlay">SINGLE FAMILY HOME</div>
+     <div class="overlay">WAYNE, NJ</div>
     </div>
    </div>
 
-  <div class="item">
-    <div class="column residential">
-     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-     <div class="caption">STUDENT HOUSING BETHLEHEM, PA</div>
+  <div class="item residential">
+    <div class="column residential all">
+     <a href="./student-housing.html"><img src="images/student-housing.png"></a>
+     <div class="overlay">STUDENT HOUSING</div>
+     <div class="overlay">BETHLEHEM, PA</div>
     </div>
   </div>
 
-  <div class="item">
-   <div class="column residential">
-     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-     <div class="caption">CONDO INTERIOR DESIGN BROOKLYN, NY</div>
+  <div class="item residential">
+   <div class="column residential all">
+     <a href="./condo-interior-design.html"><img src="images/condo-interior.png"></a>
+     <div class="overlay">CONDO INTERIOR DESIGN</div>
+     <div class="overlay">BROOKLYN, NY</div>
     </div>
   </div>
 
-  <div class="item">
-   <div class="column commercial">
-     <img src="https://i.kinja-img.com/gawker-media/image/upload/s--88Lj7uzN--/c_scale,fl_progressive,q_80,w_800/jsprifdd1gmfy7e7nola.jpg">
-     <div class="caption">CONDO INTERIOR DESIGN BROOKLYN, NY</div>
+  <div class="item commercial all">
+   <div class="column commercial all">
+     <a href="./8th-hill-restaurant.html"><img src="images/8th-hill-restaurant.png"></a>
+     <div class="overlay">8TH HILL RESTAURANT</div>
+     <div class="overlay">MANHATTAN, NY</div>
    </div>
   </div>
+
  </section>
 
  <!-- Let's Talk -->
  <section class="lets-talk">
     <div class="contact-question">What is your project?</div>
-    <div class="lets-talk-button">LET'S TALK</div>
+    <a href="./contact.html" class="lets-talk-button">LET'S TALK</a>
  </section>
 
 </div>
+</main>
 
 <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+function filterSelection(className){
+  var allListings = document.querySelectorAll('.column');
+  allListings.forEach(function(listing){
+    // if the listing includes the class name we passed in, show it, otherwise hide it
+    console.log(listing);
+    if(!listing.classList.contains(className)){
+      // if this doesn't have the className;
+      listing.style.display = "none";
+      listing.parentElement.display = "none";
     }
-  }
-  element.className = arr1.join(" ");
-}
+    else {
+      listing.style.display = "block";
+      listing.parentElement.style.display = "block";
+    }
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("filters");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
   });
 }
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("filters");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
 </script>
-</main>
+
 </body>
 
 <footer>
-  <div class="address">©2018 SK2 ARCHITECTS LLC | 38 Jackson St. Suite A201 Hoboken, NJ 07030</div>
-  <div class="connect">info@sk2architects.com | 917-690-0273 | <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-instagram"></i></div>
+  <div class="address">©2018 <span class="sk2">SK2 ARCHITECTS LLC</span> | 38 Jackson St. Suite A201 Hoboken, NJ 07030</div>
+  <div class="connect">info@sk2architects.com | 917-690-0273 | <a href="https://www.facebook.com/curiousarchitect/" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/curiousarchi" class="fa fa-twitter"></a> <a href="https://www.instagram.com/curiousarchitect/" class="fa fa-instagram"></a></div>
 </footer>
