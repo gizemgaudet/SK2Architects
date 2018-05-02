@@ -3,19 +3,36 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SK2 Architects Projects</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/projects-style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+<header>
 <div class="grid-container">
 <!-- Main Navigation -->
-  <nav>
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./index.html">HOME</a>
+  <a href="./projects.html">PROJECTS</a>
+  <a href="./about.html">ABOUT</a>
+  <a href="./contact.html">CONTACT</a>
+ </div>
+
+ <div id="main">
+  <ul>
+   <li><span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span></li>
+   <li><a href="./index.html" class="logo"><img src="images/sk2-logo.png" alt=""/></a></li>
+ </div>
+
+ <nav>
   <ul class="main-nav">
     <li><a href="./index.html" class="logo"><img src="images/sk2-logo.png" alt=""/></a></li>
     <li><a href="./index.html">HOME</a></li>
@@ -23,7 +40,8 @@
     <li><a href="./about.html">ABOUT</a></li>
     <li><a href="./contact.html">CONTACT</a></li>
   </ul>
-</nav>
+ </nav>
+</header>
 
 <main>
 <!-- Projects Filter Buttons -->
@@ -115,6 +133,7 @@
 </main>
 
 <script>
+
 function filterSelection(className){
   var allListings = document.querySelectorAll('.column');
   allListings.forEach(function(listing){
@@ -123,7 +142,7 @@ function filterSelection(className){
     if(!listing.classList.contains(className)){
       // if this doesn't have the className;
       listing.style.display = "none";
-      listing.parentElement.display = "none";
+      listing.parentElement.style.display = "none";
     }
     else {
       listing.style.display = "block";
@@ -159,10 +178,23 @@ function filterSelection(className){
 
 </script>
 
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
 </body>
 
 <footer>
-  <div class="address">©2018 <span class="sk2">SK2 ARCHITECTS LLC</span> | 38 Jackson St. Suite A201 Hoboken, NJ 07030</div>
+  <div class="address">©2018 SK2 ARCHITECTS LLC | 38 Jackson St. Suite A201 Hoboken, NJ 07030</div>
   <div class="connect">info@sk2architects.com | 917-690-0273 | <a href="https://www.facebook.com/curiousarchitect/" class="fa fa-facebook"></a>
   <a href="https://twitter.com/curiousarchi" class="fa fa-twitter"></a> <a href="https://www.instagram.com/curiousarchitect/" class="fa fa-instagram"></a></div>
 </footer>

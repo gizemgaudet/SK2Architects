@@ -4,9 +4,6 @@
 
 html {
   font-size: 10px;
-}
-
-body {
   background-color: #FAFAFA;
 }
 
@@ -19,35 +16,9 @@ html,body {
 }
 
 header {
-  background-image: url("hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 1024px;
   width: 100%;
-  max-height: auto;
-  position: relative;
-  background-position: top;
-}
-
-
-/* Grid Areas*/
-.header { grid-area: header; }
-.services { grid-area: services; }
-.content { grid-area: content; }
-.testimonials { grid-area: testimonials; }
-.lets-talk { grid-area: lets-talk; }
-.footer { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  width: 100%;
-  grid-template-areas:
-    'header'
-    'services'
-    'content'
-    'comments'
-    'lets-talk'
-    'footer';
+  height: auto;
+  background-color: #000000;
 }
 
 .container {
@@ -68,17 +39,6 @@ section.lets-talk {
 }
 
 
-/* Place text in the middle of the image */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(103, 113, 117, 0.15) 100%), rgba(17, 35, 48, 0.15);
-  mix-blend-mode: normal;
-}
-
 h1 {
   font-family: 'Yantramanav', sans-serif;
   font-size: 38px;
@@ -89,47 +49,6 @@ h1 {
   text-align: center;
   color: #ffffff;
   padding: 30px;
-}
-
-
-.flex-grid-thirds {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  align-content: center;
-}
-
-.flex-grid-thirds.comments {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 12rem;
-  align-content: center;
-  background-color: #FAFAFA;
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-
-.flex-grid-thirds.comments .col {
-  background-color: #E1E4E6;
-  padding: 6rem 6rem;
-  min-width: 30%;
-  box-shadow: 0px 4px 4px rgba(163, 162, 162, 0.25);
-}
-
-.flex-grid-thirds .col {
-  padding-left: 7rem;
-  padding-right: 7rem;
-  text-align: center;
-  width: 20%;
-}
-
-.icon {
-  width: 9rem;
-  height: 9rem;
-  margin-top:12rem;
-  margin-bottom: 2rem;
 }
 
 h2 {
@@ -162,7 +81,7 @@ h4 {
   text-align: center;
   letter-spacing: 0.5rem;
   color: #4F4F4F;
-  margin: 6rem auto 5rem auto;
+  margin: 6rem auto 0 auto;
 }
 
 h5
@@ -180,11 +99,15 @@ p {
   font-weight: 300;
   font-size: 16px;
   line-height: 34px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.1rem;
   color: #000000;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.our-process {
+  padding: 0.2rem 20rem 0.4rem 20rem;
 }
 
 .simplicity {
@@ -198,20 +121,12 @@ p {
   width: 62%;
 }
 
-
 .flex-grid-seconds {
   display: flex;
   width: 100%;
   justify-content: center;
   background-color: #FFFFFF;
   margin-top: 12rem;
-}
-
-.flex-grid-thirds .col {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .col-seconds.text {
@@ -281,7 +196,6 @@ a:hover {
   color: #D6A67F;
 }
 
-
 .logo {
   margin-left: 4rem;
   padding-top: 2rem;
@@ -337,7 +251,7 @@ a:hover {
   margin-left: 50px;
 }
 
-.lets-talk-button:hover, .learn-more-button:hover {
+.lets-talk-button:hover {
   color: white;
   background-color: #565656;
 }
@@ -352,7 +266,7 @@ a:hover {
   color: #000000;
 }
 
-.lets-talk-button, .learn-more-button {
+.lets-talk-button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -367,14 +281,6 @@ a:hover {
   margin: 3rem;
   padding: 1rem 2rem;
   text-decoration: none;
-}
-
- .learn-more-button {
-  margin-left: 13rem;
- }
-
-section.learn-more {
-  margin-bottom: 4rem;
 }
 
 footer {
@@ -427,7 +333,7 @@ footer {
       color: white;
     }
 
-    .lets-talk-button, .learn-more-button {
+    .lets-talk-button {
       font-size: 1rem;
       padding: 1rem 1rem;
     }
@@ -442,27 +348,6 @@ footer {
 
     .contact-question {
       font-size: 16px;
-    }
-
-    .flex-grid-thirds .col {
-      width: 70%;
-    }
-
-    .flex-grid-thirds {
-      display: block;
-    .col {
-      width: 100%;
-      flex-grow: 1;
-      }
-    }
-
-    .flex-grid-thirds.comments {
-      display: block;
-      padding: 0;
-    .col {
-      width: 100%;
-      flex-grow: 1;
-      }
     }
 
     .flex-grid-seconds {
@@ -485,11 +370,6 @@ footer {
       margin-right: auto;
     }
 
-    .flex-grid-thirds.comments .col {
-      width: 100%;
-      background-color: #FAFAFA;
-    }
-
     h1 {
       font-size: 24px;
       line-height: 38px;
@@ -510,19 +390,5 @@ footer {
   @media screen and (max-width: 1200px) {
     .flex-grid-seconds {
       background-color: #FFFFFF;
-    }
-
-    .flex-grid-thirds.comments {
-      display: block;
-    .col {
-      width: 100%;
-      flex-grow: 1;
-      }
-    }
-
-    .flex-grid-thirds.comments .col {
-      width: 100%;
-      background-color: #FAFAFA;
-      box-shadow: none;
     }
   }

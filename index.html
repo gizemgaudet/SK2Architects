@@ -2,11 +2,146 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gizem Gaudet - My Portfolio</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>SK2 Architects Home</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+
+<header>
+<div class="grid-container">
+<!-- Main Navigation -->
+
+ <div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="./index.html">HOME</a>
+   <a href="./projects.html">PROJECTS</a>
+   <a href="./about.html">ABOUT</a>
+   <a href="./contact.html">CONTACT</a>
+ </div>
+
+ <div id="main">
+  <ul>
+    <li><span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span></li>
+    <li><a href="./index.html" class="logo"><img src="images/sk2-logo.png" alt=""/></a></li>
+ </div>
+
+ <nav>
+  <ul class="main-nav">
+     <li><a href="./index.html" class="logo"><img src="images/sk2-logo.png" alt=""/></a></li>
+     <li><a href="./index.html">HOME</a></li>
+     <li><a href="./projects.html">PROJECTS</a></li>
+     <li><a href="./about.html">ABOUT</a></li>
+     <li><a href="./contact.html">CONTACT</a></li>
+  </ul>
+ </nav>
+
+
+ <div class="hero-text">
+   <h1>Creating functional spaces to fulfill your goals and dreams.</h1>
+ </div>
+
+</header>
+
+<main>
+
+<div class="container">
+
+<!-- SK2 Architects Services -->
+   <div class="flex-grid-thirds">
+
+    <div class="col"><img class="icon" src="images/architecture-icon.png" alt=""/>
+      <h3>ARCHITECTURAL</h3>
+      <p>Full architectural services from schematic design through completion on site.</p>
+    </div>
+
+    <div class="col"><img class="icon" src="images/interior-icon.png" alt=""/>
+      <h3>INTERIOR</h3>
+      <p>Interior design services whether configuring your commercial
+      interior space, or your home.</p>
+    </div>
+
+    <div class="col"><img class="icon" src="images/construction-icon.png" alt=""/>
+      <h3>CONSTRUCTION</h3>
+      <p>Onsite administration services with detailed documents to ensure quality production.</p>
+    </div>
+   </div>
+
+
+<!-- Simplicity Content -->
+   <div class="flex-grid-seconds">
+
+     <div class="col-seconds text">
+       <h2>SIMPLICITY YIELDS MODERN LIVABILITY. <span style="color: #E8A569">LESS IS MORE.</span></h2>
+       <p class="simplicity">We pair boldness with simplicity. We create human-centric designs committed to high quality user experience: light, airy spaces that find strength in simpleness and beauty
+       in understated elegance.</p>
+       <section class="learn-more">
+          <a href="./about.html" class="learn-more-button">LEARN MORE</a>
+       </section>
+     </div>
+
+     <div class="col-seconds 3d">
+       <img src="images/3d.png" alt=""/>
+     </div>
+   </div>
+
+
+<!-- Testimonials/Comments -->
+   <section class="comments">
+    <h4>WHAT PEOPLE SAY</h4>
+    <div class="flex-grid-thirds comments">
+     <div class="col">
+       <p>“SK2 was fantastic to work with from start to finish. They  ensured the design of our single family home was executed to perfection. The end product is amazing!”</p>
+       <h5>JOSEPH N.</h5>
+       <h5>Wayne, NJ</h5>
+     </div>
+
+     <div class="col">
+       <p>“We have worked with SK2 multiple times. They designed several commercial and medical offices for us. Each time they delivered an exceptional final product."</p>
+       <h5>S. OZ</h5>
+       <h5>Clifton, NJ</h5>
+     </div>
+
+     <div class="col">
+       <p>“It was a pleasure to work with SK2. They were very easy to work with, and sensitive to the constraints of our budget. They gave the wow factor to our condo’s interior.”</p>
+       <h5>ERTEM O.</h5>
+       <h5>Brooklyn, NY</h5>
+     </div>
+    </div>
+   </section>
+
+
+  </div>
+
+  <!-- Let's Talk -->
+  <section class="lets-talk">
+     <div class="contact-question">What is your project?</div>
+     <a href="./contact.html" class="lets-talk-button">LET'S TALK</a>
+  </section>
+</main>
+
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+
+<footer>
+  <div class="address">©2018 SK2 ARCHITECTS LLC | 38 Jackson St. Suite A201 Hoboken, NJ 07030</div>
+  <div class="connect">info@sk2architects.com | 917-690-0273 | <a href="https://www.facebook.com/curiousarchitect/" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/curiousarchi" class="fa fa-twitter"></a> <a href="https://www.instagram.com/curiousarchitect/" class="fa fa-instagram"></a></div>
+</footer>
