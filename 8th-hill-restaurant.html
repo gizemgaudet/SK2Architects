@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SK2 Architects About</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/project-details.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <body>
 <header>
-
+<div class="grid-container">
 <!-- Main Navigation -->
 
  <div id="mySidenav" class="sidenav">
@@ -44,54 +44,46 @@
 </header>
 
 <main>
+ <div class="container">
+<!-- SK2 Architects Process -->
+  <div class="project-details">
+    <h4>8TH HILL RESTAURANT - Manhattan, NY</h4>
+     <p>8th Hill Restaurant is located at New York’s iconic corner of Columbus Ave.
+     and 77th Street across from the Museum of Natural History. This is a restaturant
+     where friends, family, and neighbors can feel welcome. It’s a perfect place for
+     casual snacks and cocktails, or for feast with friends.</p>
 
-<!-- SK2 Architects Contact -->
-
-    <h4>CONTACT US</h4>
-     <p>Give us a call or use this form to get in touch. </br>
-     Let’s talk about your project! </p>
-
-     <div class="container">
-       <form action="https://formspree.io/info@sk2architects.com" method="POST">
-
-         <label for="fname">FIRST NAME</label>
-         <input type="text"  id="fname" name="firstname" required>
-
-         <label for="lname">LAST NAME</label>
-         <input type="text"  id="lname" name="lastname" required>
-
-         <label for="pnumber">PHONE NUMBER (Format: xxx-xxx-xxxx)</label>
-         <input type="tell" pattern="^\d{3}-\d{3}-\d{4}$" id="pnumber" name="tell" required>
-
-         <label for="subject">PROJECT DESCRIPTION</label>
-         <textarea id="subject" name="subject" style="height:200px" required></textarea>
-
-         <input type="submit" value="SUBMIT">
-
-         <input type="hidden" name="_next" value="http://sk2architects.com/thanks.html" />
-
-       </form>
-     </div>
-
-
-
-<!-- Who We are and Our Commitment Sections -->
-  <div class="flex-grid-seconds">
-
-    <div class="col-seconds text">
-      <p class="contact-details">
-      SK2 ARCHITECTS LLC </br>
-      38 Jackson St. Suite A201 </br>
-      Hoboken, NJ 07030 </br>
-      917-690-0273 </br>
-      INFO@SK2ARCHITECTS.COM</p>
-    </div>
-
-    <div class="col-seconds image">
-      <img src="images/office.png" alt=""/>
-    </div>
+     <p>8th Hill design has a mid-century modern vibe while providing a shot of luxe comfort
+     blending together timeless elements with modern, fashionable details. Inside, the brushed
+     brass finishes and globe light fixtures have a midcentury-modern feel. Underbar lighting
+     adds drama, and a bottle storage feature within the back bar wall is visible both from the
+     inside and the outside. We wanted to evoke the Mediterranean of the 1950s and ’60s. Our
+     goal was to give the restaurant a nautical vibe, a mediterranean feel with a modern twist.
+     We provided full architectural services, from design to construction administration.
+     </br>Status: In Progress, 2018</p>
   </div>
 
+   <img class="photo" src="images/8th-hill-restaurant-photo1.png" alt=""/>
+   <img class="photo" src="images/8th-hill-restaurant-photo2.png" alt=""/>
+   <img class="photo" src="images/8th-hill-restaurant-photo3.png" alt=""/>
+   <img class="photo" src="images/8th-hill-restaurant-photo4.png" alt=""/>
+
+   <div class="flex-grid-seconds">
+
+     <div class="col-seconds text">
+       <a href="./projects.html" class="bottom-left">< BACK TO PROJECTS</a>
+     </div>
+
+     <div class="col-seconds text">
+       <a href="./jeffersons-coffee-shop.html" class="bottom-right">NEXT PROJECT ></a>
+     </div>
+   </div>
+
+ <!-- Let's Talk -->
+ <section class="lets-talk">
+    <div class="contact-question">What is your project?</div>
+    <a href="./contact.html" class="lets-talk-button">LET'S TALK</a>
+ </section>
 
  </div>
 </main>

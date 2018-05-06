@@ -21,30 +21,12 @@ header {
   background-color: #000000;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
 section.lets-talk {
   background-color: #98AAB1;
   display:flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-h3 {
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: 0.5rem;
-  color: #4A636D;
 }
 
 h4 {
@@ -55,86 +37,62 @@ h4 {
   text-align: center;
   letter-spacing: 0.5rem;
   color: #4F4F4F;
-  margin: 6rem auto 0 auto;
+  margin: 6rem auto 2rem auto;
 }
 
-h5 {
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.5rem;
-  color: #202020;
-  margin-top: 1rem;
-}
-
-p, .membership {
+p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 34px;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.1rem;
   color: #000000;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
-.membership {
-  margin-top: 0;
+.contact-details {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 15%;
+  color: #4F4F4F;
+  width: 65%;
+  margin: auto;
 }
 
-.membership ul {
-  margin: 2rem 20rem 2rem 20rem;
-  padding: 0 6.5rem;
-  list-style-type: square;
-}
-
-.our-process {
-  padding: 0.2rem 20rem 0.4rem 20rem;
-}
 
 .flex-grid-seconds {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 0 20rem 0 20rem;
+  padding: 0 20rem 10rem 20rem;
 }
 
-.col-seconds.text, .col-seconds.profile {
+.col-seconds.text {
   display: grid;
-  margin: auto;
-  margin-top: 0;
   height:auto;
   padding: 0 6.5rem;
   width: 50%;
 }
 
-.col-seconds.text:first-child {
-  background-color: #F2F2F2;
+.col-seconds.image{
+  display: grid;
+  margin: auto;
+  margin-top: 0;
+  height:auto;
+  width: 50%;
 }
 
-.col-seconds.text:last-child {
-  background-color: #E1E4E5;
+.col-seconds.text:first-child {
+  background-color: #E1E4E6;
 }
 
 img  {
   width: 100%;
   height: auto;
   margin: auto;
-}
-
-.photo {
-  width: 15rem;
-  height: 15rem;
-  margin-top:6rem;
-  margin-bottom: 2rem;
-}
-
-.how-we-work {
-  margin: 0 20rem 0 20rem;
-  background-color: #E1E4E6;
-  padding: 0 6.5rem 3rem 6.5rem;
 }
 
 
@@ -225,39 +183,6 @@ a:hover {
   margin-left: 50px;
 }
 
-.lets-talk-button:hover {
-  color: white;
-  background-color: #565656;
-}
-
-.contact-question {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 32px;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-.lets-talk-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: #000000;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.20em;
-  color: #FFFFFF;
-  text-align: center;
-  margin: 3rem;
-  padding: 1rem 2rem;
-  text-decoration: none;
-}
-
-
 #main li {
   list-style: none;
 }
@@ -298,6 +223,64 @@ footer {
   text-decoration: none;
 }
 
+form {
+ max-width: 545px;
+ margin: auto;
+ font-family: 'Yantramanav', sans-serif;
+ font-size: 18px;
+ letter-spacing: 0.4rem;
+ color: #4F4F4F;
+ margin-bottom: 4rem;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    background-color: #F2F2F2;
+    width: 100%; /* Full width */
+    padding: 1.5rem; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1rem; /* Add a top margin */
+    margin-bottom: 2rem; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=tell], select, textarea {
+    background-color: #F2F2F2;
+    width: 100%; /* Full width */
+    padding: 1.5rem; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1rem; /* Add a top margin */
+    margin-bottom: 2rem; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.20em;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: #565656;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    padding: 20px;
+}
 
 
 @media screen and (max-height: 450px) {
@@ -329,21 +312,12 @@ footer {
       color: white;
     }
 
-    .lets-talk-button {
-      font-size: 1rem;
-      padding: 1rem 1rem;
-    }
-
     .logo {
       margin-left: 1rem;
     }
 
     .logo img {
       width: 20%;
-    }
-
-    .contact-question {
-      font-size: 16px;
     }
 
     .flex-grid-seconds {
@@ -360,11 +334,8 @@ footer {
       margin-right: auto;
     }
 
-    .our-process, .flex-grid-seconds, .col-seconds.profile {
+    .flex-grid-seconds {
      padding: 2rem;
-    }
-    .how-we-work, .membership ul {
-     margin: 2rem;
     }
 
     footer {
@@ -386,9 +357,15 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 6rem;
+    padding: 0;
    }
 
-   .col-seconds.text, .col-seconds.profile {
-    width: 100%;
-   }
+   .col-seconds.image {
+     width: 100%;
+    }
+
+  .col-seconds.text:first-child {
+    background-color: #FAFAFA;
+  }
  }

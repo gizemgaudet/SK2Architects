@@ -195,7 +195,6 @@ p {
   margin: 3rem 8rem;
   padding:0 5rem;
   line-height: 34px;
-  width: 62%;
 }
 
 
@@ -214,11 +213,16 @@ p {
   margin-right: auto;
 }
 
+.col-seconds img {
+  padding-right: 10rem;
+}
+
 .col-seconds.text {
   display: grid;
   margin: auto;
-  width: 60%;
+  width: 65%;
   height:auto;
+  padding-left: 10rem;
 }
 
 
@@ -432,6 +436,10 @@ footer {
       padding: 1rem 1rem;
     }
 
+    .learn-more-button {
+    margin-left: 8rem;
+   }
+
     .logo {
       margin-left: 1rem;
     }
@@ -446,6 +454,7 @@ footer {
 
     .flex-grid-thirds .col {
       width: 70%;
+      padding:0;
     }
 
     .flex-grid-thirds {
@@ -465,24 +474,10 @@ footer {
       }
     }
 
-    .flex-grid-seconds {
-      display: block;
-      background-color: #FFFFFF;
-    .col-seconds.text, .col-seconds.3d{
-      width: 100%;
-      flex-grow: 1;
-      }
-    }
-
     .simplicity {
       font-size: 16px;
       line-height: 30px;
-    }
-
-    .col-seconds.text {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      padding:0;
     }
 
     .flex-grid-thirds.comments .col {
@@ -500,6 +495,7 @@ footer {
      line-height: 34px;
      letter-spacing: 0.5rem;
      margin-top: 5rem;
+     padding:0;
     }
 
     footer {
@@ -508,8 +504,23 @@ footer {
   }
 
   @media screen and (max-width: 1200px) {
+
     .flex-grid-seconds {
       background-color: #FFFFFF;
+      padding-left:0;
+      display: block;
+      background-color: #FFFFFF;
+    .col-seconds.text, .col-seconds.3d{
+      width: 100%;
+      flex-grow: 1;
+      }
+    }
+
+    .col-seconds.text {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left:0;
     }
 
     .flex-grid-thirds.comments {
@@ -525,4 +536,5 @@ footer {
       background-color: #FAFAFA;
       box-shadow: none;
     }
+
   }

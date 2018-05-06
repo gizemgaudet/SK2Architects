@@ -57,8 +57,7 @@
   <div class="item commercial">
     <div class="column commercial all">
       <a href="./jeffersons-coffee-shop.html"><img src="images/jefferson-coffee.png"></a>
-      <div class="overlay">JEFFERSON’S COFFEE SHOP</div>
-      <div class="overlay">HOBOKEN, NJ</div>
+      <div class="overlay">JEFFERSON’S COFFEE SHOP </br>HOBOKEN, NJ</div>
     </div>
    </div>
 
@@ -66,8 +65,7 @@
   <div class="item residential">
     <div class="column residential all">
       <a href="./vibrant-townhomes.html"><img src="images/vibrant-townhomes.png"></a>
-      <div class="overlay">VIBRANT TOWNHOMES</div>
-      <div class="overlay">DALLAS, TX</div>
+      <div class="overlay">VIBRANT TOWNHOMES </br>DALLAS, TX</div>
     </div>
   </div>
 
@@ -75,8 +73,7 @@
   <div class="item commercial">
     <div class="column commercial all">
      <a href="./nu-height-pediatrics.html"><img src="images/nuheight-pediatrics.png"></a>
-     <div class="overlay">NU HEIGHT PEDIATRICS</div>
-     <div class="overlay">CLIFTON, NJ</div>
+     <div class="overlay">NU HEIGHT PEDIATRICS </br>CLIFTON, NJ</div>
     </div>
   </div>
 
@@ -84,40 +81,35 @@
   <div class="item commercial">
     <div class="column commercial all">
      <a href="./bod-board-of-directors.html"><img src="images/bod-directors.png"></a>
-     <div class="overlay">BOD BOARD OF DIRECTORS</div>
-     <div class="overlay">SOHO, NYC</div>
+     <div class="overlay">BOD BOARD OF DIRECTORS </br>SOHO, NYC</div>
     </div>
   </div>
 
   <div class="item residential">
     <div class="column residential all">
      <a href="./single-family-home.html"><img src="images/single-family.png"></a>
-     <div class="overlay">SINGLE FAMILY HOME</div>
-     <div class="overlay">WAYNE, NJ</div>
+     <div class="overlay">SINGLE FAMILY HOME </br>WAYNE, NJ</div>
     </div>
    </div>
 
   <div class="item residential">
     <div class="column residential all">
      <a href="./student-housing.html"><img src="images/student-housing.png"></a>
-     <div class="overlay">STUDENT HOUSING</div>
-     <div class="overlay">BETHLEHEM, PA</div>
+     <div class="overlay">STUDENT HOUSING </br>BETHLEHEM, PA</div>
     </div>
   </div>
 
   <div class="item residential">
    <div class="column residential all">
      <a href="./condo-interior-design.html"><img src="images/condo-interior.png"></a>
-     <div class="overlay">CONDO INTERIOR DESIGN</div>
-     <div class="overlay">BROOKLYN, NY</div>
+     <div class="overlay">CONDO INTERIOR DESIGN </br>BROOKLYN, NY</div>
     </div>
   </div>
 
   <div class="item commercial all">
    <div class="column commercial all">
      <a href="./8th-hill-restaurant.html"><img src="images/8th-hill-restaurant.png"></a>
-     <div class="overlay">8TH HILL RESTAURANT</div>
-     <div class="overlay">MANHATTAN, NY</div>
+     <div class="overlay">8TH HILL RESTAURANT </br>MANHATTAN, NY</div>
    </div>
   </div>
 
@@ -133,6 +125,11 @@
 </main>
 
 <script>
+
+(function () {
+    if ( typeof NodeList.prototype.forEach === "function" ) return false;
+    NodeList.prototype.forEach = Array.prototype.forEach;
+})();
 
 function filterSelection(className){
   var allListings = document.querySelectorAll('.column');
@@ -188,7 +185,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
 </script>
+
 
 
 </body>

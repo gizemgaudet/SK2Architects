@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SK2 Architects About</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/project-details.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <body>
 <header>
-
+<div class="grid-container">
 <!-- Main Navigation -->
 
  <div id="mySidenav" class="sidenav">
@@ -44,54 +44,65 @@
 </header>
 
 <main>
+ <div class="container">
+<!-- SK2 Architects Process -->
+  <div class="project-details">
+    <h4>CONDO INTERIOR DESIGN - Brooklyn, NY</h4>
+     <p>A working professional requested our interior design services for his new condo
+     in Dumbo, Brooklyn. The space was located at Brooklyn’s glass-sheathed 90 Furman St,
+     the luxury building with stunning views of New York Skylines and Brooklyn Bridge.</p>
+     <p>We paid special attention to the assets of the building, particularly the panoramas
+     and livability. The all-white scheme serves as a cool backdrop for the views. Sleek,
+     low-lying Italian seating avoids distracting interruptions on the horizon line. The
+     minimal color accents and pattern also sidestep what could have been a potentially
+     antiseptic environment, making it tactile, human and luxurious.
+     </br> Status: Completed, 2017.</p>
+  </div>
 
-<!-- SK2 Architects Contact -->
-
-    <h4>CONTACT US</h4>
-     <p>Give us a call or use this form to get in touch. </br>
-     Let’s talk about your project! </p>
-
-     <div class="container">
-       <form action="https://formspree.io/info@sk2architects.com" method="POST">
-
-         <label for="fname">FIRST NAME</label>
-         <input type="text"  id="fname" name="firstname" required>
-
-         <label for="lname">LAST NAME</label>
-         <input type="text"  id="lname" name="lastname" required>
-
-         <label for="pnumber">PHONE NUMBER (Format: xxx-xxx-xxxx)</label>
-         <input type="tell" pattern="^\d{3}-\d{3}-\d{4}$" id="pnumber" name="tell" required>
-
-         <label for="subject">PROJECT DESCRIPTION</label>
-         <textarea id="subject" name="subject" style="height:200px" required></textarea>
-
-         <input type="submit" value="SUBMIT">
-
-         <input type="hidden" name="_next" value="http://sk2architects.com/thanks.html" />
-
-       </form>
-     </div>
+   <img class="photo" src="images/condo-interior-design-photo1.png" alt=""/>
+   <img class="photo" src="images/condo-interior-design-photo2.png" alt=""/>
+   <img class="photo" src="images/condo-interior-design-photo3.png" alt=""/>
 
 
-
-<!-- Who We are and Our Commitment Sections -->
   <div class="flex-grid-seconds">
 
     <div class="col-seconds text">
-      <p class="contact-details">
-      SK2 ARCHITECTS LLC </br>
-      38 Jackson St. Suite A201 </br>
-      Hoboken, NJ 07030 </br>
-      917-690-0273 </br>
-      INFO@SK2ARCHITECTS.COM</p>
+       <img class="vertical-photo" src="images/condo-interior-design-photo4.png" alt=""/>
     </div>
 
-    <div class="col-seconds image">
-      <img src="images/office.png" alt=""/>
+    <div class="col-seconds text">
+       <img class="vertical-photo" src="images/condo-interior-design-photo5.png" alt=""/>
     </div>
   </div>
 
+  <div class="flex-grid-seconds">
+
+    <div class="col-seconds text">
+       <img class="vertical-photo" src="images/condo-interior-design-photo6.png" alt=""/>
+    </div>
+
+    <div class="col-seconds text">
+       <img class="vertical-photo" src="images/condo-interior-design-photo7.png" alt=""/>
+    </div>
+  </div>
+
+  <div class="flex-grid-seconds">
+
+    <div class="col-seconds text">
+      <a href="./projects.html" class="bottom-left">< BACK TO PROJECTS</a>
+    </div>
+
+    <div class="col-seconds text">
+      <a href="./8th-hill-restaurant.html" class="bottom-right">NEXT PROJECT ></a>
+    </div>
+  </div>
+
+
+ <!-- Let's Talk -->
+ <section class="lets-talk">
+    <div class="contact-question">What is your project?</div>
+    <a href="./contact.html" class="lets-talk-button">LET'S TALK</a>
+ </section>
 
  </div>
 </main>

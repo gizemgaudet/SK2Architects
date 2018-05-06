@@ -68,7 +68,7 @@ h5 {
   margin-top: 1rem;
 }
 
-p, .membership {
+p  {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -77,21 +77,11 @@ p, .membership {
   letter-spacing: 0.1rem;
   color: #000000;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.membership {
-  margin-top: 0;
-}
-
-.membership ul {
-  margin: 2rem 20rem 2rem 20rem;
-  padding: 0 6.5rem;
-  list-style-type: square;
-}
-
-.our-process {
-  padding: 0.2rem 20rem 0.4rem 20rem;
+.project-details{
+  padding: 0.2rem 22rem 0 22rem;
 }
 
 .flex-grid-seconds {
@@ -101,21 +91,13 @@ p, .membership {
   padding: 0 20rem 0 20rem;
 }
 
-.col-seconds.text, .col-seconds.profile {
+.col-seconds.text {
   display: grid;
   margin: auto;
   margin-top: 0;
   height:auto;
-  padding: 0 6.5rem;
   width: 50%;
-}
-
-.col-seconds.text:first-child {
-  background-color: #F2F2F2;
-}
-
-.col-seconds.text:last-child {
-  background-color: #E1E4E5;
+  padding: 0 2rem;
 }
 
 img  {
@@ -125,18 +107,31 @@ img  {
 }
 
 .photo {
-  width: 15rem;
-  height: 15rem;
-  margin-top:6rem;
+  padding: 2rem 22rem 2rem 22rem;
+}
+
+.vertical-photo {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.how-we-work {
-  margin: 0 20rem 0 20rem;
-  background-color: #E1E4E6;
-  padding: 0 6.5rem 3rem 6.5rem;
+.bottom-right, .bottom-left {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  letter-spacing: 15%;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
+.bottom-right {
+  text-align: right;
+}
+
+.bottom-left {
+  text-align: left;
+}
 
 /* Main Navigation */
 .main-nav {
@@ -305,7 +300,7 @@ footer {
   .sidenav a {font-size: 18px;}
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     #main span {
       display: none!important;
       }
@@ -360,11 +355,12 @@ footer {
       margin-right: auto;
     }
 
-    .our-process, .flex-grid-seconds, .col-seconds.profile {
-     padding: 2rem;
+    .photo {
+      padding: 2rem 2rem 2rem 2rem;
     }
-    .how-we-work, .membership ul {
-     margin: 2rem;
+
+    .project-details, .flex-grid-seconds {
+     padding: 2rem;
     }
 
     footer {
@@ -388,7 +384,27 @@ footer {
     margin-right: auto;
    }
 
-   .col-seconds.text, .col-seconds.profile {
+   .col-seconds.text {
     width: 100%;
+    padding:0;
+   }
+
+   .bottom-right {
+     text-align: center;
+     margin-top:0;
+     padding:0;
+   }
+
+   .bottom-left {
+     text-align: center;
+     margin-top:0;
+     padding:0;
    }
  }
+
+ @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+ .photo {
+    padding: 2rem 20rem 2rem 20rem;
+  }
+}
